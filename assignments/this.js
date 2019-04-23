@@ -13,14 +13,45 @@
 
 // code example for Window Binding
 
+// function jobTitle (title) {
+//     console.log(this);
+//     return title;
+// }
+// jobTitle("Service Technician");
+
 // Principle 2
 
 // code example for Implicit Binding
+
+// const newObj = {
+//     greeting: 'Hi,', 
+//     title: 'Service Technician',
+//     sayHi: function(company) {
+//         console.log(`${this.greeting} I am a ${this.title} for ${company}`);
+//         console.log(this);
+//     }
+// };
+// newObj.sayHi('Toyota');
 
 // Principle 3
 
 // code example for New Binding
 
+// function NewPerson (person) {
+//     this.message = 'Hi ';
+//     this.person = person;
+//     this.speak = function () {
+//         console.log(this.message + this.person);
+//         console.log(this);
+//     };
+// }
+
+// const Lucas = new NewPerson('Junior');
+
+// Lucas.speak();
+
 // Principle 4
 
 // code example for Explicit Binding
+
+// Lucas.speak.call(lucas); 
